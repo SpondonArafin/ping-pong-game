@@ -23,6 +23,7 @@ var ball = {
 
 function setup(){
   var canvas =  createCanvas(700,600);
+  canvas.parent('canvas');
 }
 
 
@@ -162,3 +163,9 @@ function paddleInCanvas(){
     mouseY =0;
   }  
 }
+function restart()
+{
+  pcscore = 0;
+  loop();
+}
+
